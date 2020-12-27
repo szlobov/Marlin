@@ -2424,6 +2424,12 @@
   //#define MKS_WIFI_MODULE  // MKS WiFi module
 #endif
 
+// Use custom TFT color theme from Marlin/_TFTColorTheme.h
+// Only for TFT_CLASSIC_UI or TFT_COLOR_UI.
+#if EITHER(TFT_CLASSIC_UI, TFT_COLOR_UI)
+  //#define CUSTOM_TFT_COLOR_THEME
+#endif
+
 /**
  * TFT Rotation. Set to one of the following values:
  *
